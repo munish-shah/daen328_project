@@ -107,7 +107,7 @@ Executing `docker-compose up --build` ->
 
 ## Team Members and Contributions
 
-*   **Munish Shah:** Streamlit visualizations, Docker setup, PostgreSQL schema, extracting from API, Data Cleaning (City names, liscence_, dba and aka name)
+*   **Munish Shah:** Streamlit visualizations, Docker setup, Creating Schema, extracting from API, Data Cleaning (City names, liscence_, dba and aka name)
 *   **Jaslyne Meriales:** Data Cleaning, Creating Schema, Streamlit Visualizations
 *   **Emily Juarez:** Violation cleaning, facility_type cleaning, latitude and longitude cleaning, Streamlit visualizations
 *   **Naomi Rhoe:** Data Cleaning, Streamlit Visualizations
