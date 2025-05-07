@@ -74,7 +74,7 @@ Follow these instructions to run the project on your own machine.
         Open your browser and navigate to:
         **[http://localhost:8501]**
 
-        The streamlit container will by default show a link at its completion **[http://0.0.0.0:8501]** this link will likely not work, the localhost link above is prefered and will function as intended
+        The streamlit container will by default show a link at its completion 0.0.0.0:8501 this link will likely not work, the localhost link above is prefered and will function as intended
 
 ### PostgreSQL Setup Description
 
