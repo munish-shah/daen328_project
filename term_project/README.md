@@ -87,6 +87,10 @@ Follow these instructions to run the project on your own machine.
 
 ![Dashboard Screenshot](SCR-20250506-vt6.png)
 
+![Dashboard Screenshot](SCR-20250506-wa1.png)
+
+![Dashboard Screenshot](SCR-20250506-waa.png)
+
 ## Run Behavior Summary
 
 Executing `docker-compose up --build` ->
