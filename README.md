@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-[This project provides an streamlit dashboard for analyzing food inspection data for the City of Chicago. An ETL (Extract, Transform, Load) pipeline fetches data from a public API from data.cityofchicago.org, processes and cleans it, and stores it in a PostgreSQL database. A Streamlit application then visualizes this data, allowing users to explore inspection trends, results, and common violations. The three major components are containerized collectively via Docker-Compose]
+[This project provides a streamlit dashboard for analyzing food inspection data for the City of Chicago. An ETL (Extract, Transform, Load) pipeline fetches data from a public API from data.cityofchicago.org, processes and cleans it, and stores it in a PostgreSQL database. A Streamlit application then visualizes this data, allowing users to explore inspection trends, results, and common violations. The three major components are containerized collectively via Docker-Compose]
 
 
 ### API Used
