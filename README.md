@@ -54,9 +54,9 @@ Follow these instructions to run the project on your own machine.
         ```dotenv
         DB_HOST=db
         DB_PORT=5432
-        DB_NAME=inspections_db #change this if you want a different database name
+        DB_NAME=inspections_db #change to your database name
         DB_USER=postgres
-        DB_PASSWORD=your_own_password # Replace if you want a specific password for the DB container
+        DB_PASSWORD=your_own_password # change to your specific password
         ```
         *   `DB_HOST`: Should remain `db`.
         *   `DB_PORT`: Should remain `5432`.
