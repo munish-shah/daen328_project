@@ -38,7 +38,7 @@ Follow these instructions to run the project on your own machine.
 1.  **Clone the Repository:**
     Open your terminal or command prompt and clone this repository:
     ```bash
-    git clone <your-github-repository-url>
+    git clone https://github.com/munish-shah/daen328_project.git
     cd daen328_project/term_project
     ```
 
