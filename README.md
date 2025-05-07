@@ -39,7 +39,7 @@ Follow these instructions to run the project on your own machine.
     Open your terminal or command prompt and clone this repository:
     ```bash
     git clone <your-github-repository-url>
-    cd <repository-name>
+    cd daen328_project/term_project
     ```
 
 2.  **Set Up Environment Configuration (`.env` file):**
