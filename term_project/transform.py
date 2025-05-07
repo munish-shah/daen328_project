@@ -4,18 +4,16 @@
 # In[1]:
 
 
-# Always include these two lines.
-# They allow multiple cell outputs
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 
-# Importing required libraries
-import requests  # To make HTTP requests and fetch data from APIs
-import pandas as pd  # To store, manipulate, and clean tabular data
-import sqlite3  # To interact with an SQLite database for data storage
-import json  # To handle JSON data from APIs
-import matplotlib.pyplot as plt  # Optional, for data visualization
-import os # working with operating system functions
+
+import requests 
+import pandas as pd  
+import sqlite3 
+import json  
+import matplotlib.pyplot as plt  
+import os 
 
 
 # Display confirmation
@@ -27,10 +25,10 @@ print("Libraries imported successfully!")
 
 import pandas as pd
 
-# Load the JSON file into a DataFrame
+
 df = pd.read_json('data/api_data.json')
 
-# Preview the data
+
 print(df.head())
 
 
@@ -220,12 +218,12 @@ def clean_and_standardize_cities(df, valid_cities, threshold=80):
 
     # Normalize valid cities and create a map
     valid_cities_normalized = [city.lower().strip() for city in valid_cities]
-    valid_city_map = dict(zip(valid_cities_normalized, valid_cities))  # e.g., 'morton grove' -> 'Morton Grove'
+    valid_city_map = dict(zip(valid_cities_normalized, valid_cities))  
 
-    # Normalize input city names
+
     df['city_normalized'] = df['city'].str.lower().str.strip()
 
-    # Safe match function with error handling
+
     def best_match(city):
         result = process.extractOne(city, valid_cities_normalized, scorer=fuzz.ratio)
         if result:
@@ -237,7 +235,7 @@ def clean_and_standardize_cities(df, valid_cities, threshold=80):
     # Apply matching
     df['city_cleaned'] = df['city_normalized'].apply(best_match)
 
-    # Filter matched rows
+
     df_cleaned = df[df['city_cleaned'].notnull()].copy()
     df_cleaned['city'] = df_cleaned['city_cleaned']
     df_cleaned.drop(columns=['city_normalized', 'city_cleaned'], inplace=True)
@@ -273,14 +271,14 @@ import pandas as pd
 import time
 from tqdm import tqdm
 
-# 🔑 Replace this with your own Mapbox access token
-MAPBOX_TOKEN = "pk.eyJ1IjoiZW1pbHlqdWFyZXoiLCJhIjoiY205dDVjeHZlMDhhZDJqb3QwanU2YTl3cyJ9.K6u54UVcXIlN7RZFj-cNLQ"
+
+MAPBOX_TOKEN = "pk.eyJ1IjoiZW1pbHlqdWFyZXoiLCJhIjoiY205dDVjeHZlMDhhZDJqb3QwanU2YTl3cyJ9.K6u54UVcXIlN7RZFj-cNLQ" #default public token, not a secret key
+# mapbox public keys according to their webpage "they can be safely exposed in web browsers, mobile apps, and other client environments" so we chose to leave it in the source code
 geocoder = Geocoder(access_token=MAPBOX_TOKEN)
 
-# Add a progress bar
 tqdm.pandas()
 
-# Helper function to geocode an address
+
 def mapbox_geocode(row):
     if pd.notna(row['latitude']) and pd.notna(row['longitude']):
         return row['latitude'], row['longitude']
@@ -364,7 +362,7 @@ for violation in df["violations_list"]:
         if match:
             number_list.append(match.group())  # Append extracted violation number
     
-    violation_number_list.append(number_list)  # Store numbers for the entity
+    violation_number_list.append(number_list)  
 df["violation_num_list"] = violation_number_list
 
 
