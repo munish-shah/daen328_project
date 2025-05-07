@@ -70,8 +70,8 @@ Follow these instructions to run the project on your own machine.
 4.  **Accessing Services:**
     *   **Process:** You will see logs in your terminal from the `db-1` container as it sets up and configure the databse, the  `etl-1` container as it extracts, transforms, and loads data and lastly the `streamlit-1` container.
 
-    *   **Streamlit Dashboard:** Once the `etl` container has finished and the `streamlit` container starts successfully, the dashboard will be accessible.
-        Open your browser and navigate to:
+    *   **Streamlit Dashboard:** Once the `streamlit` container starts successfully, the dashboard will be accessible.
+        Navigate to:
         **[http://localhost:8501]**
 
         The streamlit container will by default show a link at its completion 0.0.0.0:8501 this link will likely not work, the localhost link above is prefered and will function as intended
