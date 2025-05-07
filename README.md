@@ -50,7 +50,7 @@ Follow these instructions to run the project on your own machine.
         cp .env.sample .env
         ```
     *   Open the new `.env` file created from the cp command in a text editor.
-    *   Change the default values to whatever is your db name, user and password:
+    *   Change the default values to whatever is your db name, user and password, make sure your chosen DB name exists for you and your password is accurate:
         ```dotenv
         DB_HOST=db
         DB_PORT=5432
