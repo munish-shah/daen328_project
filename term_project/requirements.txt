@@ -1,0 +1,30 @@
+# Database
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.27
+python-dotenv==1.0.1
+
+# Data Processing
+pandas==2.0.3
+numpy==1.24.3
+
+# Data Visualization
+matplotlib==3.7.1
+seaborn==0.12.2
+plotly==5.13.1
+
+# Web Framework
+streamlit==1.22.0
+
+# HTTP Requests
+requests==2.31.0
+
+# Geocoding
+pgeocode==0.4.1
+
+# Additional Dependencies
+rapidfuzz==3.6.1
+mapbox==0.18.1
+tqdm==4.65.0
+
+# IPython (for notebooks)
+ipython==7.34.0
